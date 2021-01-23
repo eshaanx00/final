@@ -143,13 +143,8 @@ if(mousePressedOver(jump)){
   
 
 drawSprites()
-  showCoordinates();
 }
-function showCoordinates(event) {
-  xc = event.touches[0].clientX;
-   yc = event.touches[0].clientY;
-  
-}
+
 function callob(){
   if (frameCount % 120===0&&game==="play"){
     ob=createSprite(displayWidth-20,random(150,displayHeight-100))
