@@ -7,6 +7,7 @@ var engine, world;
 var ob,obgroup
 var bulletG,bullet 
 var score=0
+var xc,yc
 var timeL=0
 var time=0
 var flag=0
@@ -74,6 +75,10 @@ function draw() {
     callob();
     play.x=20000000
     play.y=20000000
+    if(xc<200){
+      spaceship.y-=20 
+      spaceship.addImage(spup) 
+    }
 if(mousePressedOver(jump)){
   spaceship.y-=20 
       spaceship.addImage(spup) 
@@ -138,6 +143,11 @@ if(mousePressedOver(jump)){
   
 
 drawSprites()
+}
+function showCoordinates(event) {
+  xc = event.touches[0].clientX;
+   yc = event.touches[0].clientY;
+  
 }
 function callob(){
   if (frameCount % 120===0&&game==="play"){
