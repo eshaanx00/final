@@ -143,6 +143,7 @@ if(mousePressedOver(jump)){
   
 
 drawSprites()
+  showCoordinates();
 }
 function showCoordinates(event) {
   xc = event.touches[0].clientX;
