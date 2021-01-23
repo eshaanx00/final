@@ -78,6 +78,7 @@ function draw() {
     if(xc<200){
       spaceship.y-=20 
       spaceship.addImage(spup) 
+      touches=[]
     }
 if(mousePressedOver(jump)){
   spaceship.y-=20 
